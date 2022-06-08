@@ -14,7 +14,21 @@ config/app.php
 ],
 ```
 
-### Tạo bảng products
+### Setup Database
+\.env
+```
+# Database
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Clear cache config
+php artisan config:clear
+
+### Tạo table products
 ```
 create table `products` (
 	`id` int (11),
